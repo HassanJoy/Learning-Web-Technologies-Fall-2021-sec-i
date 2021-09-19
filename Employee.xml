@@ -1,0 +1,21 @@
+<employees>
+	<employee id="11">
+		<name> John Doe </name>
+		<address><flat> </flat> <houseNo>H# 38</houseNo><roadNo> R#3</roadNo> <place> Banani</place><capital>Dhaka</capital></address>
+		<department> sales </department>
+		<salary>20000</salary>
+	</employee>
+
+	<employee id="20">
+		<name> Mark Zukerberg </name>
+		<address><flat> </flat> <houseNo>H#20 </houseNo><roadNo> R#18 </roadNo> <place> mirpur </place><capital>Dhaka</capital></address>
+		<department> Account </department>
+		<salary> 12000 </salary>
+	</employee>
+<employee id="23">
+		<name> Alok Voski</name>
+		<address><flat> </flat> <houseNo>H#38 </houseNo><roadNo> R#3 </roadNo> <place> motijiheel </place><capital></capital></address>
+		<department> Human Resource </department>
+		<salary> 30000 </salary>
+	</employee>
+</employees>

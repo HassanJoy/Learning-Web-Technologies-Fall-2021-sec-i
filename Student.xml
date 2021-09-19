@@ -1,0 +1,15 @@
+<students>
+	<student id="23">
+		<name> John Carter </name>
+		<addmissionDate><date>25</date><month>12< /month><year>2015</year></addmissionDate>
+	</student>
+
+	<student id="29>
+		<name> Bob Marshal </name>
+		<addmissionDate><date>13</date><month>01< /month><year>1999</year></addmissionDate>
+	</student>
+        <student id="35">
+		<name> Clark Kent </name>
+		<addmissionDate><date>17</date><month>06< /month><year>2005</year></addmissionDate>
+	</student>
+</students>
