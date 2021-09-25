@@ -1,14 +1,7 @@
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500&display=swap" rel="stylesheet">
 	<title>Page 1</title>
 	<style>
-		html {
-			font-family: 'Signika', sans-serif;
-		}
-		
 		table {
 			border-collapse: collapse;
 		}
@@ -26,9 +19,9 @@
 			<td width="30%">
 					<strong>Links</strong>
 					<br>
-					&nbsp;<a href="Page-1.html">Page 1</a> 
+					<a href="Page-1.html">Page 1</a> 
 					<br>
-					&nbsp;<a href="Page-2.html">Page 2</a>
+					<a href="Page-2.html">Page 2</a>
 			</td>
 			<td width="30%">
 				<h2>Page-1</h2>
@@ -52,4 +45,3 @@
 		</tr>
 	</table>
 </body>
-</html>
