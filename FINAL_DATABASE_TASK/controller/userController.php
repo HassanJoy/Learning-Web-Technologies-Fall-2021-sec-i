@@ -29,13 +29,14 @@
 		$user = ['id'=>$id, 'name'=> $name, 'email'=> $email, 'dept'=> $dept];
 		
 		//update by ref...
-		foreach ($users as $u) {
+		foreach ($users as $u ) {
 			if($u['id'] == $id){
-				$u = $user;
+				$users[$u]=is_int($user[$id]);
+                unset($u);
 				break;
 			}
 		}
-
+        array_push($users, $user);
 		$_SESSION['users'] = $users;
 		header('location: ../view/view_users.php');
 	}
@@ -54,6 +55,8 @@
 				break;
 			}
 		}
+        array_splice($users, $user);
+    
 
 		$_SESSION['users'] = $users;
 		header('location: ../view/view_users.php');
