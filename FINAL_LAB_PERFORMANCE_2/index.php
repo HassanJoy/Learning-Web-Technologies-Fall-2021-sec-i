@@ -49,7 +49,6 @@
                         $('#display').html(old);
                         return;
                     }
-                    //var str = $('#display').val()+num;
                     $.ajax({
                             url:'ajax.php',
                             type: "POST",
@@ -79,7 +78,6 @@
         </script>
     </head>
     <body>
-<!--        <button id="me">Click Me</button>-->
 <form name = "form1">
 
   <input id = "calc" type ="text" name = "answer"> <br> <br>
