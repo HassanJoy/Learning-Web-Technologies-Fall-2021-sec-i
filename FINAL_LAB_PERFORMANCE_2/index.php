@@ -35,54 +35,9 @@
                 font-size: 20px;
             }
         </style>
-        <script>
-            $(document).ready(function(){
-                //general
-                $('input[type=button]').click(function(){
-                    var num = $(this).val();
-                    var old = $('#display').html();
-                    //this will clear the screen
-                    if( num === 'C' ){
-                        $('#display').html('');
-                        return;
-                    }
-                    if( num === '=' ){
-                        $('#display').html(old);
-                        return;
-                    }
-                    //var str = $('#display').val()+num;
-                    $.ajax({
-                            url:'ajax.php',
-                            type: "POST",
-                            data:{'action':'operation','num':num,'old':old},
-                            success: function(msg){
-                                $('#display').html(msg);
-                            }
-                        }).error(function(){
-                            $('#display').html('Oops! An error occured');}
-                           );
-                });
-                //equal button click
-                $('#eql').click(function(){
-                    var num = $('#display').html();
-                    var old = $('#display').html();
-                    $.ajax({
-                            url:'ajax.php',
-                            type: "POST",
-                            data:{'action':'equal', 'num':num, 'old':old},
-                            success: function(msg){
-                                $('#display').html(msg);
-                            }
-                        }).error(function(){
-                            $('#display').html('Oops! An error occured');}
-                           );
-                });
-            });
-        </script>
     </head>
     <body>
 <!--        <button id="me">Click Me</button>-->
-Simple Calculator Using AJAX/PHP
 <form name = "form1">
 
   <input id = "calc" type ="text" name = "answer"> <br> <br>
@@ -94,7 +49,45 @@ Simple Calculator Using AJAX/PHP
   <input type = "button" value = "MR" onclick = "form1.answer.value += 'MR'">
   <input type = "button" value = "M+" onclick = "form1.answer.value += 'M+'">
 
- 
+  <br> <br>
+
+  <input type = "button" value = "%" onclick = "form1.answer.value += '%' ">
+  <input type = "button" value = "CE" onclick = "form1.answer.value += 'CE' ">
+  <input type = "button" value = "C" onclick = "form1.answer.value = ' ' " >
+  <input type = "button" value = "⌫" onclick = "form1.answer.value = ' ' " id= "clear" >
+  <br> <br>
+
+  <input type = "button" value = "1/x" onclick = "form1.answer.value += '1/x' ">
+  <input type = "button" value = "x2" onclick = "form1.answer.value += 'x2' ">
+  <input type = "button" value = "2√x" onclick = "form1.answer.value += '2√x' ">
+  <input type = "button" value = "÷" onclick = "form1.answer.value += '÷' ">
+  
+  <br> <br>
+  
+  
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">
+  <br> <br>
+
+  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+  <br> <br>
+
+  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">
+  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+   <input type = "button" value = "+"onclick = "form1.answer.value += '+' ">
+  <br> <br>
+  <input type = "button" value = "+/-"onclick = "form1.answer.value += '+/-' ">
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+  <input type = "button" value = "." onclick = "form1.answer.value += '.' ">
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+  <br> 
+  <br>
  
 </form>
     </body>
